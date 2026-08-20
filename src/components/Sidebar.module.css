@@ -27,6 +27,7 @@
 }
 
 .photoWrap {
+  position: relative;
   margin: 28px auto 0;
   width: 190px;
   height: 190px;
@@ -34,6 +35,36 @@
   border: 6px solid var(--color-primary);
   padding: 6px;
   background: var(--color-surface-alt);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photoWrap::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.photoWrap:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.photoWrap:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photoWrap,
+  .photoWrap::after {
+    transition: none;
+  }
 }
 
 .photoInner {
@@ -59,9 +90,11 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  cursor: default;
 }
 
 .iconBadge {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +104,7 @@
   border-radius: 50%;
   background: var(--color-primary);
   color: var(--color-primary-contrast);
+  transition: box-shadow 0.4s ease;
 }
 
 .iconBadgeLight {
@@ -78,10 +112,60 @@
   color: var(--color-primary);
 }
 
+.iconBadge::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.iconBadgeLight::after {
+  border-color: var(--color-surface);
+}
+
 .iconBadge svg,
 .iconBadgeLight svg {
   width: 18px;
   height: 18px;
+  transition: transform 0.4s ease;
+}
+
+@keyframes sectionIconBadgeSpin {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.18) rotate(180deg);
+  }
+}
+
+.sectionHeading:hover .iconBadge {
+  animation: sectionIconBadgeSpin 0.7s ease-in-out;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.sectionHeading:hover .iconBadge::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sectionHeading:hover .iconBadge svg {
+  transform: scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iconBadge,
+  .iconBadge::after,
+  .iconBadge svg {
+    transition: none;
+    animation: none;
+  }
 }
 
 .contactList {
@@ -105,6 +189,26 @@
   color: var(--color-primary);
 }
 
+@keyframes contactIconSpin {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(180deg);
+  }
+}
+
+.contactItem:hover svg {
+  animation: contactIconSpin 0.7s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contactItem:hover svg {
+    animation: none;
+  }
+}
+
 .bottom {
   position: relative;
   flex: 1;
@@ -112,8 +216,8 @@
   padding: 36px 28px 40px;
   background: var(--color-primary);
   color: var(--color-primary-contrast);
-  border-top-left-radius: 130px;
-  border-top-right-radius: 130px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
 }
 
 .bottom .sectionHeading {

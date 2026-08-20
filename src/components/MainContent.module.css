@@ -17,6 +17,7 @@
   gap: 14px;
   margin-top: 34px;
   margin-bottom: 20px;
+  cursor: default;
 }
 
 .sectionHeading h3 {
@@ -26,6 +27,7 @@
 }
 
 .iconBadge {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,11 +37,58 @@
   border-radius: 50%;
   background: var(--color-primary);
   color: var(--color-primary-contrast);
+  transition: box-shadow 0.4s ease;
+}
+
+.iconBadge::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
 }
 
 .iconBadge svg {
   width: 20px;
   height: 20px;
+  transition: transform 0.4s ease;
+}
+
+@keyframes iconBadgeSpin {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.18) rotate(180deg);
+  }
+}
+
+.sectionHeading:hover .iconBadge {
+  animation: iconBadgeSpin 0.7s ease-in-out;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.sectionHeading:hover .iconBadge::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sectionHeading:hover .iconBadge svg {
+  transform: scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iconBadge,
+  .iconBadge::after,
+  .iconBadge svg {
+    transition: none;
+    animation: none;
+  }
 }
 
 .experienceItem + .experienceItem {
