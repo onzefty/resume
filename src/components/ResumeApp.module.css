@@ -1,0 +1,21 @@
+.pageWrap {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  width: 100%;
+  max-width: var(--page-max-width);
+  background: var(--color-surface);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}

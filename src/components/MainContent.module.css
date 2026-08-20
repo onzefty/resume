@@ -1,0 +1,169 @@
+.main {
+  padding: 44px 44px 50px;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.tagline h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.sectionHeading h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.iconBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.iconBadge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.experienceItem + .experienceItem {
+  margin-top: 26px;
+}
+
+.experienceHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.role {
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.dates {
+  font-weight: 700;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.company {
+  margin-top: 2px;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.bullets {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bullets li {
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.bulletDetail {
+  display: block;
+  font-style: italic;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  column-gap: 40px;
+  row-gap: 18px;
+}
+
+.skillRow {
+  display: grid;
+  grid-template-columns: minmax(120px, auto) 1fr;
+  align-items: center;
+  gap: 14px;
+}
+
+.skillName {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.skillTrack {
+  height: 6px;
+  border-radius: 4px;
+  background: var(--color-track);
+  overflow: hidden;
+}
+
+.skillFill {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--color-primary);
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 34px;
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.bulletList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.inlineList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 760px) {
+  .skillsGrid,
+  .twoCol {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+}

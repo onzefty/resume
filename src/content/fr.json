@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "locale": "fr",
+    "label": "Français",
+    "documentTitle": "CV - Aurélien Bouillon"
+  },
+  "profile": {
+    "firstName": "Aurélien",
+    "lastName": "Bouillon",
+    "title": "Développeur - Concepteur",
+    "photo": "/images/profile.jpg",
+    "tagline": [
+      "Développeur front-end senior",
+      "Maîtrise de langues (anglais & espagnol)"
+    ]
+  },
+  "contacts": {
+    "heading": "Contacts",
+    "items": [
+      { "type": "phone", "value": "+33 6 82 52 54 55" },
+      { "type": "website", "value": "https://onzefty.github.io/", "href": "https://onzefty.github.io/" },
+      { "type": "location", "value": "9 rue de Dublin, 90000 Belfort" }
+    ]
+  },
+  "formation": {
+    "heading": "Formation",
+    "items": [
+      {
+        "school": "Université de Franche-Comté",
+        "degree": "Master Langues & E-commerce",
+        "start": "2013",
+        "end": "2014"
+      },
+      {
+        "school": "Université de Franche-Comté",
+        "degree": "Licence L.E.A.",
+        "start": "2009",
+        "end": "2013"
+      }
+    ]
+  },
+  "experiences": {
+    "heading": "Expériences",
+    "items": [
+      {
+        "role": "Concepteur - Développeur",
+        "company": "Onlineformapro",
+        "location": "Vesoul",
+        "start": "2016",
+        "end": "Aujourd'hui",
+        "bullets": [
+          { "text": "Développement et intégration de modules E-learning", "detail": "(HTML, CSS3, JavaScript ES6, sons, vidéos, responsive, compatibilité, animations)." },
+          { "text": "Gestion des interfaces et des données des contenus de formation", "detail": "(leçons, évaluations, navigation, arborescence, progression, score, statut de formation)" },
+          { "text": "Gestion du SCORM des formations sur plateforme LMS", "detail": "(Transmission de données, sauvegarde des données, ScormCloud)" },
+          { "text": "Maintenance des modules E-learning" },
+          { "text": "Création/retouches d'assets (images/médias)", "detail": "(Photoshop, Illustrator, Audition)" },
+          { "text": "Utilisation de l'IA", "detail": "(prompts d'agents, fonctions basiques, traductions...) (Chat GPT, Claude, Copilot, Azur)" }
+        ]
+      },
+      {
+        "role": "Consultant CRM Siebel",
+        "company": "Geviteam",
+        "location": "Maisons-Alfort",
+        "start": "2014",
+        "end": "2015",
+        "bullets": [
+          { "text": "Configuration d'interface des applications (Écrans, Vues et d'Applets, Web Templates)." }
+        ]
+      },
+      {
+        "role": "Développeur Web",
+        "company": "MOR Solutions",
+        "location": "Drogheda",
+        "start": "2014",
+        "end": "2014",
+        "bullets": [
+          { "text": "Création et gestion de sites internet", "detail": "(ModX, Wordpress)." },
+          { "text": "Intégration Front-End web de sites", "detail": "(HTML, CSS3, Photoshop, Bootstrap)." },
+          { "text": "Gestion des bases de données et filtres Wordpress", "detail": "(PHP)" }
+        ]
+      }
+    ]
+  },
+  "competences": {
+    "heading": "Compétences",
+    "items": [
+      { "name": "HTML - CSS3", "level": 90 },
+      { "name": "Adobe Photoshop / Illustrator", "level": 85 },
+      { "name": "JavaScript (ES6)", "level": 85 },
+      { "name": "Git / Github", "level": 80 },
+      { "name": "React", "level": 65 },
+      { "name": "ChatGPT / Copilot", "level": 70 }
+    ]
+  },
+  "langues": {
+    "heading": "Langues",
+    "items": ["Français", "Anglais", "Espagnol"]
+  },
+  "hobbies": {
+    "heading": "Hobbies",
+    "items": ["Natation", "Voyager"]
+  }
+}

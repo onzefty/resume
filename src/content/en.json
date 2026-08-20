@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "locale": "en",
+    "label": "English",
+    "documentTitle": "Resume - Aurelien Bouillon"
+  },
+  "profile": {
+    "firstName": "Aurelien",
+    "lastName": "Bouillon",
+    "title": "Developer - Designer",
+    "photo": "/images/profile.jpg",
+    "tagline": [
+      "Senior front-end developer",
+      "Fluent in foreign languages (English & Spanish)"
+    ]
+  },
+  "contacts": {
+    "heading": "Contacts",
+    "items": [
+      { "type": "phone", "value": "+33 6 82 52 54 55" },
+      { "type": "website", "value": "https://onzefty.github.io/", "href": "https://onzefty.github.io/" },
+      { "type": "location", "value": "9 rue de Dublin, 90000 Belfort, France" }
+    ]
+  },
+  "formation": {
+    "heading": "Education",
+    "items": [
+      {
+        "school": "University of Franche-Comte",
+        "degree": "Master's in Languages & E-commerce",
+        "start": "2013",
+        "end": "2014"
+      },
+      {
+        "school": "University of Franche-Comte",
+        "degree": "Bachelor's in Applied Foreign Languages",
+        "start": "2009",
+        "end": "2013"
+      }
+    ]
+  },
+  "experiences": {
+    "heading": "Experience",
+    "items": [
+      {
+        "role": "Designer - Developer",
+        "company": "Onlineformapro",
+        "location": "Vesoul",
+        "start": "2016",
+        "end": "Present",
+        "bullets": [
+          { "text": "Development and integration of E-learning modules", "detail": "(HTML, CSS3, JavaScript ES6, audio, video, responsive design, compatibility, animations)." },
+          { "text": "Management of interfaces and training content data", "detail": "(lessons, assessments, navigation, tree structure, progress, score, training status)" },
+          { "text": "SCORM management for courses on LMS platform", "detail": "(Data transmission, data storage, ScormCloud)" },
+          { "text": "Maintenance of E-learning modules" },
+          { "text": "Creation/editing of assets (images/media)", "detail": "(Photoshop, Illustrator, Audition)" },
+          { "text": "Use of AI tools", "detail": "(agent prompts, core functions, translations...) (ChatGPT, Claude, Copilot, Azure)" }
+        ]
+      },
+      {
+        "role": "Siebel CRM Consultant",
+        "company": "Geviteam",
+        "location": "Maisons-Alfort",
+        "start": "2014",
+        "end": "2015",
+        "bullets": [
+          { "text": "Application interface configuration (Screens, Views, Applets, Web Templates)." }
+        ]
+      },
+      {
+        "role": "Web Developer",
+        "company": "MOR Solutions",
+        "location": "Drogheda",
+        "start": "2014",
+        "end": "2014",
+        "bullets": [
+          { "text": "Creation and management of websites", "detail": "(ModX, Wordpress)." },
+          { "text": "Front-end integration for websites", "detail": "(HTML, CSS3, Photoshop, Bootstrap)." },
+          { "text": "Database management and Wordpress filters", "detail": "(PHP)" }
+        ]
+      }
+    ]
+  },
+  "competences": {
+    "heading": "Skills",
+    "items": [
+      { "name": "HTML - CSS3", "level": 90 },
+      { "name": "Adobe Photoshop / Illustrator", "level": 85 },
+      { "name": "JavaScript (ES6)", "level": 85 },
+      { "name": "Git / Github", "level": 80 },
+      { "name": "React", "level": 65 },
+      { "name": "ChatGPT / Copilot", "level": 70 }
+    ]
+  },
+  "langues": {
+    "heading": "Languages",
+    "items": ["French", "English", "Spanish"]
+  },
+  "hobbies": {
+    "heading": "Hobbies",
+    "items": ["Swimming", "Traveling"]
+  }
+}
